@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      body {
+        font-family: "Kodchasan", sans-serif;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        width: 300px;
+        border-radius: 10px;
+        border-bottom: 10px solid #bf5f82;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .image-room {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .image-box {
+        position: relative;
+      }
+      .type-of-buying {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #f48fb1;
+        padding: 0.2rem;
+        border-top-right-radius: 10px;
+        color: white;
+      }
+      .align-box-axis-x {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .align-box-axis-y {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+      }
+      .price,
+      .type {
+        margin: 0.2rem 0.5rem;
+        gap: 0.5rem;
+      }
+      .location {
+        padding: 0.2rem 1rem;
+      }
+      .other {
+        justify-content: flex-start;
+        gap: 1.5rem;
+        text-decoration: none;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="content-top">
+        <article class="card">
+          <div class="image-box">
+            <img
+              class="image-room"
+              src="./inclass-asset/Rectangle 17.png"
+              alt="room image"
+            />
+            <div class="type-of-buying align-box-axis-x">
+              <img src="./inclass-asset/top img.svg" alt="" />For Rental
+            </div>
+          </div>
+          <div class="content-bottom">
+            <div class="header-content align-box-axis-x">
+              <div class="price align-box-axis-x">
+                <img src="./inclass-asset/Price.svg" alt="" />
+                <p>3,000</p>
+              </div>
+              <div class="type align-box-axis-x">
+                <img src="./inclass-asset/type.svg" alt="" />
+                <p>Apartment</p>
+              </div>
+            </div>
+            <div class="footer-content align-box-axis-y">
+              <div class="location">
+                <p>86872 Jacob Gateway, Durganport, WV 48044</p>
+              </div>
+              <div class="other align-box-axis-x">
+                <div class="bed align-box-axis-x">
+                  <img src="./inclass-asset/bx-bed.svg" alt="" />
+                  <p>4</p>
+                </div>
+                <div class="bath align-box-axis-x">
+                  <img src="./inclass-asset/bx-bath.svg" alt="" />
+                  <p>2</p>
+                </div>
+                <div class="area align-box-axis-x">
+                  <img src="./inclass-asset/bx-area.svg" alt="" />
+                  <p>180 m2</p>
+                </div>
+                <div class="pet align-box-axis-x">
+                  <img src="./inclass-asset/paw.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
